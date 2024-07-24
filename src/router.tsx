@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import AppTemplate from "./templates/app.template";
+import Notes from "./components/notes.component";
 const router = createBrowserRouter([
     {
         path: "/note-taking",
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
                             },
                             {
                                 path : ":id",
-                                element : <div>Note</div>
+                                element : <Notes />
                             }
                         ]
                     }
