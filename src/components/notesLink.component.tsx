@@ -1,7 +1,9 @@
-export default function notesLinkComponent({title} : {title: string}) {
+import { Link } from "react-router-dom"
+
+export default function notesLinkComponent({title, id} : {title: string, id: string}) {
     return (
         <div>
-            <h1>{title}</h1>
+            <Link to={`note/${id}`}>{title}</Link>
         </div>
     )
 }

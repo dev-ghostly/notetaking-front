@@ -27,7 +27,7 @@ export default function App() {
         </div>
         <div className="ml-4">
           {notes.map((note: any) => (
-            <NotesLink title={note.title} key={note._id} />
+            <NotesLink title={note.title} id={note._id} key={note._id} />
           ))}
         </div>
       </div>
