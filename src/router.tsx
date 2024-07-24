@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-
+import AppTemplate from "./templates/app.template";
 const router = createBrowserRouter([
     {
         path: "/note-taking",
@@ -10,7 +10,13 @@ const router = createBrowserRouter([
             },
             {
                 path: "app",
-                element: <div>App</div>
+                element: <AppTemplate />,
+                children : [
+                    {
+                        path : "",
+                        element : <div>Home</div>
+                    }
+                ]
             }
         ]
     }
