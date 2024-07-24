@@ -1,7 +1,7 @@
-export default function notesLinkComponent() {
+export default function notesLinkComponent({title} : {title: string}) {
     return (
         <div>
-            <h1>Notes Link Component</h1>
+            <h1>{title}</h1>
         </div>
     )
 }
